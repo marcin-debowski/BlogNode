@@ -8,7 +8,7 @@ const blogRoutes = require('./routes/blogRoutes')
 const app = express();
 
 //connect to mangoDB
-const dbURI= 'mongodb+srv://Presza:Koliber123@nodecours.qonhalo.mongodb.net/node-cours?retryWrites=true&w=majority&appName=NodeCours'
+const dbURI= URI
 mongoose.connect(dbURI)
   .then((result)=>app.listen(3000))
   .catch((err)=>console.log(err))
